@@ -21,7 +21,11 @@ public class Main {
             num =ranom.nextFloat();
             cube.roll(num);
             v = cube.getValue();
-            bordes[v]=num;
+            if(bordes[v]<num){
+                bordes[v]=num;
+            }
+
+
 
         }
         float delta = (float)1/(float)d;
